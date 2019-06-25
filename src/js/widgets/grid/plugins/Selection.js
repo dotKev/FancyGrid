@@ -2557,6 +2557,7 @@ Fancy.modules['selection'] = true;
         el = F.get(document.createElement('textarea'));
 
       el.addCls(GRID_COPY_TEXTAREA);
+      el.attr('aria-label', 'table title here');
 
       me.copyEl = F.get(w.el.dom.appendChild(el.dom));
     },
